@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'studio';
+    src: url(fonts/Studio.woff);
+}
+@font-face {
+    font-family: 'khorshid';
+    src: url(fonts/khorshid\ .woff);
+}
+@font-face {
+    font-family: 'iranyekan';
+    src: url(fonts/iranyekan.woff);
+}
+@font-face {
+    font-family: 'aviny';
+    src: url(fonts/4.woff);
+}
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --p-color:#bf2936;
+    --s-color:#023e54;
+    --body-color:#c6b99a;
+}
+
+h1,h2,h3{
+    font-family: 'aviny';
+    color: var(--s-color);
+    margin: 0;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+.red{
+    color: var(--p-color);
+}
+.studio{
+    font-family: 'studio',sans-serif;
+}
+
+.firstpage{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+/* navbar */
+ul li , button{
+    font-family: 'studio',sans-serif;
+}
+
+.firstpage{
+    height: 100vh;
+}
+
+
+
+.nav-item li .on{
+    color: #5168B1 ;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+}
+
+.img-con a{
+    text-decoration: none;
+}
+.logo{
+    cursor: pointer;
+    font-family: 'khorshid';
+    font-size: 2rem;
+    color: #5168B1;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    transition: transform 0.1s;
+}
+.nav-item li:hover{
+    transform: scale(1.2);
+}
+
+.nav-item li a{
+    text-decoration: none;
+    color: rgb(88, 86, 86);
+    transition: transform 0.1s;
+}
+.nav-item li:hover a{
+    color: var(--s-color);
+}
+.icons{
+    font-size: 3rem;
+    color: #5168B1;
+    display: none;
+}
+.checkbox{
+    display: none;
+}
+    
+#close{
+    display: none;
+}
+/* start */
+.work{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-around;
+    height: 100%;
+    margin: auto;
+}
+
+.work-image{
+    width: 100%;
+    border: 1px solid #1b0760;
+    border-radius: 80px;
+    margin: auto;
+}
+
+.work-content{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.work-h1{
+    font-family: 'khorshid',sans-serif;
+    color: #5168B1;
+    margin-bottom: 3rem;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid #5168B1;
+    font-family: 'studio',sans-serif;
+    font-size: 1.5rem;
+    background: 0;
+    transition: background-color 0.2s;
+}
+.btn:hover{
+    background-color: #5168B1;
+}
+.btn:hover .seo-color{
+    color: #fff;
+}
+.seo-color{
+    color: #5168B1;
+
+}
+
+.full-page{
+    direction: rtl;
+    height: 100vh;
+}
+
+.res-color{
+    color: #BA615C;
+}
+.res-border{
+    border: 1px solid #BA615C;
+}
+.res-btn:hover{
+    background-color: #BA615C;
+}
+.res-btn:hover .res-color{
+    color: #fff;
+}
+.page-3{
+    direction: ltr;
+}
+
+.profile-color{
+    color: var(--body-color);
+}
+.profile-border{
+    border: 1px solid var(--body-color);
+}
+.profile-btn:hover{
+    background-color: var(--body-color);
+}
+.profile-btn:hover .profile-color{
+    color: #fff;
+}
+
+
+.moshavere-color{
+    color:#7747FA;
+}
+.moshavere-border{
+    border: 1px solid #7747FA;
+}
+.moshavere-btn:hover{
+    background-color: #7747FA;
+}
+.moshavere-btn:hover .moshavere-color{
+    color: #fff;
+}
+
+
+
+@media screen and (max-width:1300px) {
+    .nav{
+        padding: 3rem 5rem;
+    }
+    .nav-item li{
+        font-size: 1.8rem;
+    }
+    .logo{
+        font-size: 1.8rem;
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .full-page{
+        gap: 5rem;
+    }
+    .work-image{
+        width: 62%;
+        margin: 0 auto;
+    }
+    .work-content{
+        margin: 0 auto;
+    }
+}
+
+.nav-item li a{
+    font-size: 3rem
+}
+
+.checkbox:checked~.icons #menu{
+    display: none;
+}
+.checkbox:checked ~ .navbar .nav-item{
+    transform: translateY(0);
+}
+.checkbox:checked~.icons #close{
+    display: block;
+}
+
+@media screen and (max-width:825px){
+    .nav{
+        padding: 0;
+    }
+    .img-con {
+        margin: 2rem 0 0 2rem;
+    }
+    .icons{
+        margin: 2rem 2rem 0 0;
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+    }
+    .work-image,.work-content{
+        margin: 0;
+    }
+    .work-image{
+        width: 75%;
+    }
+    .full-page{
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .icons{
+        display: inline-flex;
+    }
+    .navbar{
+        height: 100vh;
+        border-radius: 0;
+    }
+    .nav{
+        flex-wrap: wrap;
+    }
+    .nav-item{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        gap: 3rem;
+        height: 100%;
+        transform: translatex(-100%);
+        overflow: hidden;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        margin-top: 1rem;   
+        z-index: 5; 
+        border-radius: 2rem;
+        transition: 1.5s ;
+        border-radius: 0;
+    }
+
+
+
+}
