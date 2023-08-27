@@ -4,90 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>کلودی</title>
     <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
   </head>
   <body>
-    <section class="firstpage" id="first">
-      <nav>
-        <div class="nav">
-          <div class="img-con">
-            <a href="#"><h1 class="logo">نمونه کار</h1></a>
-          </div>
-          <input type="checkbox" id="menu" class="checkbox">
-          <label for="menu" class="icons">
-            <i class='bx bx-menu' id="menu"></i>
-            <i class='bx bx-x' id="close"></i>
-          </label>
-          <div class="navbar">
-            <ul class="nav-item">
-              <li><a href="#first" class="on">سئویی</a></li>
-              <li><a href="#second">غذا بخور</a></li>
-              <li><a href="#third">پروفایل</a></li>
-              <li><a href="#fourth">مشاوره</a></li>
-            </ul>
-          </div>
+    <header class="container">
+      <div class="nav" id="nav">
+        <input type="checkbox" id="menu" class="menu" />
+        <label class="hamb-menu" for="menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </label>
+
+        <ul class="nav-item" id="nav-item">
+          <li><a class="first-li" href="#">صفحه اصلی</a></li>
+          <li><a href="#">ویژگی ها</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">چرا ما</a></li>
+          <li><a href="#">قیمت ها</a></li>
+        </ul>
+        <div>
+          <img class="logo" src="img/logo-w.png" id="logo-w" />
+          <img class="logo none" src="img/logo.png" id="logo" />
         </div>
-      </nav>
-      <div class="work">
-        <img class="work-image" src="images/seoyi.png" alt="" />
-        <div class="work-content">
-          <h1 class="work-h1">سئویی</h1>
-          <button class="btn">
-            <a class="seo-color" href="/seo-site/index.html">بزن بریم</a>
+      </div>
+    </header>
+    <section class="page1">
+      <div class="content-img">
+        <div class="content">
+          <h1>
+            سایت خود را زیر
+            <br />
+            یک دقیقه بالا بیاورید
+          </h1>
+          <p>
+            ارائه دهنده خدمات ثبت دامنه، هاستینگ و میزبانی وب، سرور مجازی
+            <br />
+            سرور اختصاصی، کولوکیشن، زیرساخت‌ ابری و پنل پیامک
+          </p>
+          <button class="btn btn-start">
+            <a href="#">شروع کنیم</a>
+            <div class="circle"></div>
           </button>
+        </div>
+        <div>
+          <img class="image" src="img/hero-img.png" alt="" />
         </div>
       </div>
     </section>
-    <section class="full-page" id="second">
-      <div class="work">
-        <img class="work-image res-border" src="images/res.png" alt="" />
-        <div class="work-content">
-          <h1 class="work-h1 res-color">غذا بخور</h1>
-          <button class="btn res-btn res-border">
-            <a class="res-color" href="/reston-first-page/index.html"
-              >بزن بریم</a
-            >
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="full-page page-3" id="third">
-      <div class="work">
-        <img
-          class="work-image profile-border"
-          src="images/profile.png"
-          alt=""
-        />
-        <div class="work-content">
-          <h1 class="work-h1 profile-color">پروفایل</h1>
-          <button class="btn profile-btn profile-border">
-            <a href="/prodile-site/index.html" class="profile-color"
-              >بزن بریم</a
-            >
-          </button>
-        </div>
-      </div>
-    </section>    </section>
-    <section class="full-page page-4" id="fourth">
-      <div class="work">
-        <img
-          class="work-image moshavere-border"
-          src="images/moshavere.png"
-          alt=""
-        />
-        <div class="work-content">
-          <h1 class="work-h1 moshavere-color">مشاوره</h1>
-          <button class="btn moshavere-btn moshavere-border">
-            <a href="/moshvere/index.html" class="moshavere-color"
-              >بزن بریم</a
-            >
-          </button>
-        </div>
-      </div>
-    </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
