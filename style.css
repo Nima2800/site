@@ -80,9 +80,9 @@ h3{
 
 .logo{
     width: 100%;
-    height: 100px;
+    height: 40px;
     margin-top: 2rem;
-
+    margin: auto;
 }
 .menu , .hamb-menu{
     display: none;
@@ -221,7 +221,7 @@ h3{
         padding: 1rem 2rem;
     }
     .logo{
-        height: 80px;
+        height: 30px;
     }
     h1{
         font-size: 4rem;
@@ -238,7 +238,7 @@ h3{
     .content-img{
         display: flex;
         flex-direction: column;
-        padding-top: 10rem;
+        /* padding-top: 10rem; */
     }
     .nav{
         justify-content: space-between;
