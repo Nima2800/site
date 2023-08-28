@@ -151,7 +151,7 @@ h3{
 }
 
 .content{
-    margin: auto;
+    margin: 0 auto;
 }
 
 .content h1{
@@ -238,7 +238,7 @@ h3{
     .content-img{
         display: flex;
         flex-direction: column;
-        /* padding-top: 10rem; */
+        padding-top: 5rem;
     }
     .nav{
         justify-content: space-between;
@@ -246,7 +246,7 @@ h3{
     }
     .btn-start{
         float: none;
-        margin-top: 1rem;
+        margin: 1rem 0;
     }
     .nav-item{
         flex-direction: column;
@@ -309,5 +309,28 @@ h3{
     }
     .content{
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width:370px){
+    .content h1{
+        line-height: 5rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .content p{
+        font-size: 0.6rem;
+    }
+    .btn-start{
+        margin-top: 0;
+        padding: 0.7rem 1.5rem;
+        margin-bottom: 0;
+    }
+    .content-img{
+        padding-top: 7rem;
+    }
+    .content{
+        margin-bottom: 2rem ;
     }
 }
