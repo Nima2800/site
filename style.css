@@ -239,14 +239,39 @@ h3{
 }
 
 .icon-circle{
-
     width: 70px;
+}
+.page-2{
+    margin-bottom: 10rem;
+}
+
+/* page 3 */
+.content-img-page3{
+    margin: auto;
+    max-width: 80%;
+}
+.content-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.content-body p{
+    line-height: 3rem;
+}
+
+.image-page-3{
+    width: 100%;
+    height: 100%;
 }
 @media screen and (max-width:1550px) {
     .image-h1-p h1{
         font-size: 3.5rem;
     }
+
 }
+
 @media screen and (max-width:1420px) {
     .image-h1-p h1{
         font-size: 2rem;
@@ -276,8 +301,22 @@ h3{
         width: 100%;
     }
 }
+@media screen and (max-width:1150px){
+    .content-body h1{
+    font-size: 3.5rem;
+}
+    .image-h1-p p{
+        font-size: 0.8rem;
+    }
 
+}
 @media screen and (max-width:1000px){
+    .image-page-3{
+    margin-bottom: 2rem;
+}
+    .page-2{
+        margin-bottom: 3rem;
+    }
     .image-h1-p h1{
         font-size: 2.5rem;
     }
