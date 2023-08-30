@@ -43,6 +43,9 @@ p{
     color: var(--par-color);
     direction: rtl;
 }
+body{
+    width: 100%;
+}
 
 h1{
     font-size: 4rem;
@@ -71,6 +74,7 @@ h3{
     top: 0;
     height: 5rem;
     justify-content: space-around;
+    z-index: 99;
 
 }
 
@@ -134,6 +138,7 @@ h3{
     color: #162447;
 }
 .page1{
+    z-index: -1;
     background-image: url(img/hero-bg.svg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -296,10 +301,13 @@ h3{
 .page-5{
     background-color: #EEEFFF;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .page-5-con{
     width: 70%;
-    margin:auto;
     padding: 4rem 0;
 }
 .page-5-title{
@@ -398,6 +406,9 @@ h3{
 
 }
 @media screen and (max-width:1000px){
+    .content-body h1{
+        font-size: 3rem;
+    }
     .page-5-items{
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
