@@ -29,13 +29,9 @@
     --white:#fff;
     --y-color:#FDD446;
     --h-color:#162447;
-    --p-color:#555F76;
+    --par-color:#555F76;
 }
 
-
-body{
-    height: 500vh;
-}
 
 h1,h2,h3{
     color: var(--h-color);
@@ -44,7 +40,7 @@ h1,h2,h3{
 }
 p{
     font-size: 1.3rem;
-    color: var(--p-color);
+    color: var(--par-color);
     direction: rtl;
 }
 
@@ -245,7 +241,7 @@ h3{
     margin-bottom: 10rem;
 }
 
-/* page 3 */
+/* page 4 */
 .content-img-page3{
     margin: auto;
     max-width: 80%;
@@ -263,16 +259,104 @@ h3{
 
 .image-page-3{
     width: 100%;
-    height: 100%;
 }
+.page-3{
+    margin-bottom: 5rem;
+}
+
+/* page 3 */
+
+.page-4{
+    direction: rtl;
+}
+.circle-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 90%;
+    direction: rtl;
+}
+.circle-item{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.circle-item h3{
+    font-family: 'aviny';
+}
+
+.circle-box-circle{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--p-color);
+}
+
+/* page 5 */
+.page-5{
+    background-color: #EEEFFF;
+    margin-top: 5rem;
+}
+.page-5-con{
+    width: 70%;
+    margin:auto;
+    padding: 4rem 0;
+}
+.page-5-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.page-5-title p{
+    width: 85%;
+    text-align:center ;
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+}
+.page-5-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    row-gap: 7rem;
+}
+.page-5-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.page-5-item h3{
+    margin-bottom: 1rem;
+}
+.page-5-item p{
+    text-align: center;
+    line-height: 2rem;
+}
+.page-5-item-img-con{
+    width: 75px;
+}
+.firewall-icon{
+    width: 85px;
+}
+
 @media screen and (max-width:1550px) {
     .image-h1-p h1{
         font-size: 3.5rem;
+    }
+    .page-5-con{
+        width: 80%;
     }
 
 }
 
 @media screen and (max-width:1420px) {
+    .page-5-con{
+        width: 85%;
+    }
     .image-h1-p h1{
         font-size: 2rem;
     }
@@ -302,6 +386,9 @@ h3{
     }
 }
 @media screen and (max-width:1150px){
+    .page-5-con{
+        width: 90%;
+    }
     .content-body h1{
     font-size: 3.5rem;
 }
@@ -311,8 +398,13 @@ h3{
 
 }
 @media screen and (max-width:1000px){
+    .page-5-items{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
     .image-page-3{
     margin-bottom: 2rem;
+    width: 90%;
 }
     .nav-item .first-li a{
         position: relative;
@@ -422,7 +514,45 @@ h3{
     }
 }
 
+@media screen and (max-width:770px){
+    .page-5-items{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+}
+    .page-5-con{
+    width: 80%;
+}
+.page-5-title h1{
+    font: 3.7rem;
+}
+.page-5-title p{
+    font-size: 1rem;
+    line-height: 3rem;
+}
+}
 @media screen and (max-width:480px){
+    .page-5-title p{
+        line-height: 2rem;
+    }
+    .page-5-items p{
+        width: 90%;
+    }
+    .page-5-con{
+        width: 90%;
+    }
+    .page-3{
+        margin-bottom: 2rem;
+    }
+    .content-body h1{
+        font-size: 2.5rem;
+    }
+    .content-body p{
+        font-size: 1rem;
+    }
+    .image-page-3{
+        width:100%;
+    }
     .image-h1-p h1{
         font-size: 2rem;
     }
@@ -437,13 +567,17 @@ h3{
         line-height: 5rem;
 
     }
+
     .content p{
+        white-space: nowrap;
+        width: 98%;
         font-size: 0.8rem;
         margin-top: 1rem;
-
+        margin-right: auto;
+        margin-left: auto;
     }
     .btn-start{
-        margin-top: 0;
+        margin-top: 0rem;
     }
     .content{
         margin-top: 0;
@@ -455,7 +589,13 @@ h3{
 }
 
 @media screen and (max-width:370px){
-
+    .content-body h1{
+        font-size: 2rem;
+    }
+    .content-body p{
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
 
     .content h1{
         font-size: 2.5rem;
