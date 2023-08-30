@@ -241,9 +241,11 @@ h3{
 }
 
 /* page 4 */
+
 .content-img-page3{
     margin: auto;
     max-width: 80%;
+    gap: 1rem;
 }
 .content-body{
     display: flex;
@@ -538,6 +540,9 @@ h3{
 }
 }
 @media screen and (max-width:480px){
+    .content-body{
+        gap: 2rem;
+    }
     .page-5-title p{
         line-height: 2rem;
     }
