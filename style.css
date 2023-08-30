@@ -44,6 +44,10 @@ p{
     direction: rtl;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1{
     font-size: 4rem;
 }
@@ -348,6 +352,9 @@ h3{
     width: 85px;
 }
 
+footer{
+    width: 100vw;
+}
 @media screen and (max-width:1550px) {
     .image-h1-p h1{
         font-size: 3.5rem;
