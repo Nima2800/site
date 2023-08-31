@@ -46,6 +46,7 @@ p{
 
 body{
     overflow-x: hidden;
+    width: 100vw;
 }
 
 h1{
@@ -519,7 +520,7 @@ footer{
 }
 @media screen and (max-width:1150px){
     .page-5-con{
-        width: 100%;
+        width: 90%;
     }
     .content-body h1{
     font-size: 3.5rem;
@@ -688,10 +689,14 @@ footer{
         line-height: 2rem;
     }
     .page-5-items p{
-        width: 90%;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .page-5-title h1{
+        font-size: 3rem;
     }
     .page-5-con{
-        width: 90%;
+        width: 80%;
     }
     .page-3{
         margin-bottom: 2rem;
