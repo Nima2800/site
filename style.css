@@ -480,7 +480,77 @@ footer{
     box-shadow: 0px 0px 15px -3px rgba(87, 98, 255,0.5);
 }
 
+/* page-7 */
+.page-7{
+    max-width: 1320px;
+    background-image: url(img/subscribe-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.page-7-con{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    direction: rtl;
+    margin: auto;
+}
+.page-7-content{
+    margin: auto;
+}
+.page-7-content h1{
+    color: var(--white);
+}
+.email-form{
+    display: flex;
+    position: relative;
+}
+.email-form input{
+    padding: 2rem;
+    width: 90%;
+    direction: rtl;
+    border-radius: 1.5rem;
+    border: 0;
+    font-family: 'iranyekan',sans-serif;
+    font-size: 1rem;
+}
+
+.sub-btn{
+    position: absolute;
+    z-index: 10;
+    left: 11%;
+    background-color: var(--p-color);
+    height: 80%;
+    border: 0;
+    top: 10%;
+    border-radius: 1.5rem;
+    font-family: 'studio',sans-serif;
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-form input:focus{
+    outline: none;
+    border: 0;
+}
+
+
+
+
+
 @media screen and (max-width:1550px) {
+    .page-7-con{
+        width: 100%;
+        justify-content: center;
+    }
+
     .image-h1-p h1{
         font-size: 3.5rem;
     }
@@ -528,7 +598,28 @@ footer{
         width: 100%;
     }
 }
+@media screen and (max-width:1350px){
+    .page-7{
+        max-width: 1140px;
+        height: 250px;
+        padding: 2rem;
+    }
+        .page-7-content h1{
+        font-size: 3.5rem;
+    }
+}
 @media screen and (max-width:1150px){
+    .page-7{
+        max-width: 990px;
+        height: 220px;
+        padding: 2rem;
+    }
+    .page-7-content h1{
+        font-size: 3rem;
+    }
+    .email-form input{
+        padding: 1.5rem;
+    }
     .page-5-con{
         width: 90%;
     }
@@ -541,6 +632,22 @@ footer{
 
 }
 @media screen and (max-width:1000px){
+    .page-7{
+        max-width: 90%;
+        height: 200px;
+        padding: 2rem;
+    }
+    .sub-btn{
+        font-size: 1.5rem;
+    }
+    .page-7-content h1{
+        font-size: 2.5rem;
+    }
+    .email-form input{
+        padding: 1.2rem;
+    }
+
+    
     .page-6-title p{
         line-height: 3rem;
     }
@@ -666,8 +773,36 @@ footer{
         margin-bottom: 3rem;
     }
 }
+@media screen and (max-width:900px){
+    .page-7{
+        max-width: 90%;
+        height: 170px;
+        padding: 2rem;
+    }
+    .page-7-content h1{
+        font-size: 2rem;
+    }
+    .email-form input{
+        font-size: 0.8rem;
+    }
+
+}
 
 @media screen and (max-width:770px){
+    .page-7-content h1{
+        font-size: 1.7rem;
+    }
+    .email-form input{
+        font-size: 0.5rem;
+    }
+    .sub-btn{
+        font-size: 1rem;
+    }
+    .page-7{
+        max-width: 90%;
+        height: 140px;
+        padding: 2rem;
+    }
     .page-5-items{
         display: flex;
         flex-direction: column;
@@ -683,6 +818,15 @@ footer{
     font-size: 1rem;
     line-height: 3rem;
 }
+}
+@media screen and (max-width:600px){
+
+    .page-7{
+        display: none;
+    }
+    .email-form input{
+        padding: 1rem;
+    }
 }
 @media screen and (max-width:480px){
     .page-2{
